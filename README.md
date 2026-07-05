@@ -29,11 +29,12 @@ If the syllabus is missing, Claude will say so explicitly instead of proceeding.
 
 ## Installation
 
-1. Download this repo as a ZIP
-2. Go to claude.ai → Sidebar → Customize → Skills → Add → Upload a skill → Drag and drop the downloaded certification-study-helper.ZIP file
-3. Go to claude.ai → Sidebar → Projects → New project and create a project
-4. Attach the relevant ISTQB syllabus in Files inside your newly created Project. **NOTE:** converting it from `*.PDF` to `*.md` saves a significant number of tokens
-5. Start a conversation — Claude will begin by asking about your experience level, target exam date, strong/weak topics, preferred learning style, and available study time, then let you pick a study mode.
+1. Download this repo as a ZIP and extract it
+2. Open `SKILL.md` and adjust the description and the `metadata` values to match the certification exam you're preparing for
+3. Re-zip the folder, then go to claude.ai → Sidebar → Customize → Skills → Add → Upload a skill → Drag and drop the edited certification-study-helper.ZIP file
+4. Go to claude.ai → Sidebar → Projects → New project and create a project
+5. Attach the relevant ISTQB syllabus in Files inside your newly created Project. **NOTE:** converting it from `*.PDF` to `*.md` saves a significant number of tokens
+6. Start a conversation — Claude will begin by asking about your experience level, target exam date, strong/weak topics, preferred learning style, and available study time, then let you pick a study mode.
 
 ## Repo structure
 
