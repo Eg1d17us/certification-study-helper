@@ -23,15 +23,17 @@ Once active, Claude acts as a precise, Socratic tutor and offers eight study mod
 
 This skill needs reference material attached as a project/session file to work. It will not guess or fabricate syllabus content:
 
-- The official newest **`Syllabus`** version converted to *.md format for better token economy
+- The relevant official **`Syllabus`** version converted to *.md format for better token economy
 
 If the syllabus is missing, Claude will say so explicitly instead of proceeding. K1–K6 level *definitions* and Learning Objective examples, used for K-level tagging and mapping on practice questions, are bundled in [`references/k-levels.md`](references/k-levels.md) and work without any additional file.
 
 ## Installation
 
 1. Download this repo as a ZIP
-2. Go to claude.ai → Sidebar → Customize → Skills → Upload a whole downloaded ZIP file
-3. Start a conversation — Claude will begin by asking about your experience level, target exam date, strong/weak topics, preferred learning style, and available study time, then let you pick a study mode.
+2. Go to claude.ai → Sidebar → Customize → Skills → Add → Upload a skill → Drag and drop the downloaded certification-study-helper.ZIP file
+3. Go to claude.ai → Sidebar → Projects → New project and create a project
+4. Attach the relevant ISTQB syllabus in Files inside your newly created Project. **NOTE:** converting it from `*.PDF` to `*.md` saves a significant number of tokens
+5. Start a conversation — Claude will begin by asking about your experience level, target exam date, strong/weak topics, preferred learning style, and available study time, then let you pick a study mode.
 
 ## Repo structure
 
