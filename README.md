@@ -1,0 +1,49 @@
+# ISTQB Certification Study Helper
+
+An **ISTQB Certification Study Helper** turns Claude into a dedicated study coach for the **ISTQB** certifications.
+
+The skill is deliberately scoped: it only teaches from material you attach (the official syllabus) rather than relying on Claude's general/pretrained knowledge of software testing, so explanations and practice questions stay traceable to the real exam content.
+
+## What it does
+
+Once active, Claude acts as a precise, Socratic tutor and offers eight study modes:
+
+| Mode | What it does |
+|------|------------------|
+| **Concept Explainer** | Explains a syllabus topic with a citation, plain-language definition, real-world example/analogy, and a common exam trap. |
+| **Exam Question Simulator** | Generates multiple-choice questions tagged by K-level (K2–K4) and syllabus section; withholds the rationale until you answer. |
+| **Gap Analyser** | Runs a short mixed-topic quiz, scores it, and maps wrong answers back to syllabus sections to rank your weak areas. |
+| **Mind Map Builder** | Breaks a chapter into a subtopic hierarchy — outputs a text outline plus a standalone HTML mind map you can open in a browser. |
+| **Scenario Coach** | Poses a realistic K3/K4 agile-testing scenario and works through your reasoning Socratically instead of just giving the answer. |
+| **Glossary Driller** | Flashcard-style drilling of syllabus glossary terms, tracking which ones you keep missing. |
+| **Study Planner** | Builds a day-by-day or week-by-week schedule around your exam date and available study time. |
+| **Mock Exam Review** | Reviews a completed practice set question by question and aggregates a per-chapter score breakdown. |
+
+## Requirements
+
+This skill needs reference material attached as a project/session file to work. It will not guess or fabricate syllabus content:
+
+- The official newest **`Syllabus`** version converted to *.md format for better token economy
+
+If the syllabus is missing, Claude will say so explicitly instead of proceeding. K1–K6 level *definitions* and Learning Objective examples, used for K-level tagging and mapping on practice questions, are bundled in [`references/k-levels.md`](references/k-levels.md) and work without any additional file.
+
+## Installation
+
+1. Download this repo as a ZIP
+2. Go to claude.ai → Sidebar → Customize → Skills → Upload a whole downloaded ZIP file
+3. Start a conversation — Claude will begin by asking about your experience level, target exam date, strong/weak topics, preferred learning style, and available study time, then let you pick a study mode.
+
+## Repo structure
+
+```
+certification-study-helper/
+├── SKILL.md              # Skill definition (metadata, persona, rules, output formats)
+└── references/
+    └── k-levels.md        # ISTQB K1–K6 cognitive-level definitions and Learning Objective examples
+```
+
+## Notes
+
+- Claude will never claim personal professional experience or credentials while this skill is active — it sticks to tone/behavior defined in `SKILL.md` rather than an invented backstory.
+- Study plan "Resources" only ever point to the attached syllabus — never to external books, courses, or links Claude can't verify.
+- This is a community/personal skill and is not affiliated with or endorsed by ISTQB.
