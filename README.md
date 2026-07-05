@@ -23,9 +23,9 @@ Once active, Claude acts as a precise, Socratic tutor and offers eight study mod
 
 This skill needs reference material attached as a project/session file to work. It will not guess or fabricate syllabus content:
 
-- The relevant official **`Syllabus`** version converted to *.md format for better token economy
+- The relevant official **`Syllabus`** version converted to `*.md` format (for better token economy) has to be attached in the Project's Files. 
 
-If the syllabus is missing, Claude will say so explicitly instead of proceeding. K1–K6 level *definitions* and Learning Objective examples, used for K-level tagging and mapping on practice questions, are bundled in [`references/k-levels.md`](references/k-levels.md) and work without any additional file.
+If the syllabus is missing, Claude will say so explicitly instead of proceeding. K1–K6 level *definitions* and Learning Objective examples, used for K-level tagging and mapping on practice questions, are bundled in [`references/k-levels.md`](references/k-levels.md) and work without any additional files.
 
 ## Installation
 
