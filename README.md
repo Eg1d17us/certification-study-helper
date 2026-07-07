@@ -1,6 +1,6 @@
-# ISTQB Certification Study Helper
+# ISTQB CTFL Study Helper
 
-An **ISTQB Certification Study Helper** turns Claude into a dedicated study coach for the **ISTQB** certifications.
+An **ISTQB Certification Study Helper** turns Claude into a dedicated study coach for **ISTQB** certifications. This copy is configured for the **Certified Tester Foundation Level (CTFL), syllabus v4.0**.
 
 The skill is deliberately scoped: it only teaches from material you attach (the official syllabus) rather than relying on Claude's general/pretrained knowledge of software testing, so explanations and practice questions stay traceable to the real exam content.
 
@@ -23,7 +23,13 @@ Once active, Claude acts as a precise, Socratic tutor and offers eight study mod
 
 This skill needs reference material attached as a project/session file to work. It will not guess or fabricate syllabus content:
 
-- The relevant official **`Syllabus`** version converted to `*.md` format (for better token economy) has to be attached in the Project's Files (Point 5 in the below installation instructions). 
+- The official **ISTQB CTFL v4.0 syllabus** converted to `*.md` format (for better token economy) has to be attached in the Project's Files (Point 5 in the below installation instructions).
+
+**Where to download the syllabus:** the CTFL v4.0 syllabus is a free PDF from ISTQB. Get it from either:
+- The official ISTQB site → [istqb.org](https://www.istqb.org/) → *Certifications → Certified Tester Foundation Level (CTFL)*, or directly from the ISTQB downloads/documents page.
+- Your national/regional ISTQB member board (e.g. ASTQB in the US, UKITB in the UK), which host the same official PDF.
+
+Always use the latest official **v4.0** release rather than third-party reproductions, so the content matches the current exam.
 
 If the syllabus is missing, Claude will say so explicitly instead of proceeding. K1–K6 level *definitions* and Learning Objective examples, used for K-level tagging and mapping on practice questions, are bundled in [`references/k-levels.md`](references/k-levels.md) and work without any additional files.
 
